@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Rows and Gaps in CSS Grid</title>
+    <style>
+        .grid{
+            display: grid;
+
+            /*agar aap fr ko row me use kar rahe hai to te aapko height provide karega mtlb ki jitna jayada fr utni hi zayada height*/
+            /*grid-template-rows->1fr 1fr 4fr means that ki 1 box k 1fr height ho jayegi and 2 box ki bhi height 1fr ho jayegi and 3 box ki height 4fr ho jayegi and baki jitne bhi boxes bache hai unki height grid-auto-rows->2fr se 2fr height ho jayegi*/
+            grid-template-rows: 1fr 1fr 4fr;
+            grid-auto-rows: 2fr;
+            /* grid-template-columns: 1fr 4fr 2fr; */
+            /* grid-template-columns: repeat(4, 2fr); */
+            grid-gap: 2rem;
+        }
+        .box{
+            background-color: burlywood;
+            border: 2px solid crimson;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">This is Box-1</div>
+        <div class="box">This is Box-2</div>
+        <div class="box">This is Box-3</div>
+        <div class="box">This is Box-4</div>
+        <div class="box">This is Box-5</div>
+        <div class="box">This is Box-6</div>
+        <div class="box">This is Box-7</div>
+        <div class="box">This is Box-8</div>
+        <div class="box">This is Box-9</div>
+        <div class="box">This is Box-10</div>
+    </div>
+</body>
+</html>

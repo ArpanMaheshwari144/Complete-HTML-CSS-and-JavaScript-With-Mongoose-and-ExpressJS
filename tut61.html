@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time in JavaScript</title>
+    <style>
+        .container{
+            font-size: 23px;
+            background-color: aqua;
+            border: 2px solid black;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("this is date and time");
+        // to yaha humne Date class ke object ka use kiya hai
+        // let now=new Date();
+        // console.log(now);
+
+        // agar hum date object ke andar 0 daal dete hai to by default wo jo default date set ki gyi hai wo leta hai
+        // let dt=new Date(0);
+        // console.log(dt);
+
+        // agar hum date object ke andar x(in always milliseconds) daal dete hai to wo jo by default date hai usme x milliseconds ka increement hoga or wo print ho jayegi
+        // let date=new Date(1000);
+        // console.log(date);
+
+        // agar hum date object ke andar koi bhi date daal dete hai to wo date set ho jati hai 
+        // let newDate=new Date("2029-09-30");
+        // console.log(newDate);
+
+        // // let newate1=new Date(year,month,date,hours,minutes,seconds)
+        // // for month->ye january ko 0 number leta hai 
+        // let newDate1=new Date(2020,0,6,10,3,2);
+        // console.log(newDate1);
+
+        // let yr=newDate1.getFullYear();
+        // console.log(yr);
+
+        // let month=newDate1.getMonth();
+        // console.log(month);
+
+        // let date1=newDate1.getDate();
+        // console.log(date1);
+
+        // let hours=newDate1.getHours();
+        // console.log(hours);
+
+        // let minutes=newDate1.getMinutes();
+        // console.log(minutes);
+
+        // let seconds=newDate1.getSeconds();
+        // console.log(seconds);
+
+        // // The getDay() method returns the day of the week (from 0 to 6) for the specified date. Sunday is 0, Monday is 1, and so on.
+        // let day=newDate1.getDay();
+        // console.log(day);
+
+        // newDate1.setDate(10);
+        // newDate1.setMonth(10);
+        // newDate1.setMinutes(10);
+        // console.log(newDate1);
+
+        function updateTime(){
+            time.innerHTML=new Date();
+        }
+        setInterval(updateTime,1000);
+    </script>
+</body>
+</html>

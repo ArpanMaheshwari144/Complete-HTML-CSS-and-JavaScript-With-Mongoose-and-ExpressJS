@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation The DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container
+    </div>
+
+    <script>
+
+        let main=document.getElementById('main');
+        console.log(main);
+
+        let nav=document.getElementById('nav');
+        console.log(nav);
+
+        let containers=document.getElementsByClassName('container');
+        console.log(containers);
+
+        let sel=document.querySelector('.container');
+        console.log("Selectors returns ", sel);
+
+        let sel1=document.querySelector('#nav');
+        console.log("Selectors returns 1 ", sel1);
+
+        let sel2=document.querySelector('#nav>li');
+        console.log("Selectors returns 2 ", sel2);
+
+        let sel3=document.querySelectorAll('#nav>li');
+        console.log("Selectors returns 3 ", sel3);
+        // sel3[0].innerHTML="changed";
+    </script>
+</body>
+</html>

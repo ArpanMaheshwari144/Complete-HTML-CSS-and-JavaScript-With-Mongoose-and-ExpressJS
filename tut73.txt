@@ -1,0 +1,92 @@
+->These query will run only in powershell
+
+>kisi bhi file ko open karenge vscode mei open karne ke baad hum ye commands powershell me rum karenge
+->Commands
+->use harryKart
+->show collections
+
+->This is for Read(Searching)
+
+->Searching data in mogodb
+
+->this query will return all the objects with rating equal to 5
+db.items.find({rating:5}->filter object)
+
+->this query will return all the objects with rating greater than 4
+db.items.find({rating:{$gt:4}})
+
+->this query will return all the objects with rating greater than or equal to 4
+db.items.find({rating:{$gte:4}})
+
+->this query will return all the objects with rating less than 4
+db.items.find({rating:{$lt:4}})
+
+->this query will return all the objects with rating less than or equal to 4
+db.items.find({rating:{$lte:4}})
+
+->AND Operator
+->for greater than or equal to
+->this query will return all the objects with rating greater than 4 And(operator) price greater than 40000
+db.items.find({rating:{$gt:4},price:{$gt:40000}})
+
+->this query will return all the objects with rating greater than or equal to 4 And(operator) price greater than 40000
+db.items.find({rating:{$gte:4},price:{$gt:40000}})
+
+->this query will return all the objects with rating greater than 4 And(operator) price greater than equal to 40000
+db.items.find({rating:{$gt:4},price:{$gte:40000}})
+
+->this query will return all the objects with rating greater than or equal to 4 And(operator) price greater than or equal to 40000
+db.items.find({rating:{$gte:4},price:{$gte:40000}})
+
+
+->AND Operator
+->for less than or equal to
+->this query will return all the objects with rating greater than 4 And(operator) price greater than 40000
+db.items.find({rating:{$lt:4},price:{$lt:40000}})
+
+->this query will return all the objects with rating greater than or equal to 4 And(operator) price greater than 40000
+db.items.find({rating:{$lte:4},price:{$lt:40000}})
+
+->this query will return all the objects with rating greater than 4 And(operator) price greater than equal to 40000
+db.items.find({rating:{$lt:4},price:{$lte:40000}})
+
+->this query will return all the objects with rating greater than or equal to 4 And(operator) price greater than or equal to 40000
+db.items.find({rating:{$lte:4},price:{$lte:40000}})
+
+->OR Operator
+->for less than or equal to
+->this query will return all the objects with rating less than 4 OR(operator) price less than 40000
+db.items.find({$or:[{rating:{$lt:4}},{price:{$lt:40000}}]})
+
+->this query will return all the objects with rating less than 4 OR(operator) price less than or equal to 40000
+db.items.find({$or:[{rating:{$lt:4}},{price:{$lte:40000}}]})
+
+->this query will return all the objects with rating less than or equal to 4 OR(operator) price less than 40000
+db.items.find({$or:[{rating:{$lte:4}},{price:{$lt:40000}}]})
+
+->this query will return all the objects with rating less than or equal 4 OR(operator) price less than or equal to 40000
+db.items.find({$or:[{rating:{$lte:4}},{price:{$lte:40000}}]})
+
+->OR Operator
+->for greater than or equal to
+->this query will return all the objects with rating greater than 4 OR(operator) price greater than 40000
+db.items.find({$or:[{rating:{$gt:4}},{price:{$gt:40000}}]})
+
+->this query will return all the objects with rating greater than 4 OR(operator) price greater than or equal to 40000
+db.items.find({$or:[{rating:{$gt:4}},{price:{$gte:40000}}]})
+
+->this query will return all the objects with rating greater than or equal to 4 OR(operator) price greater than 40000
+db.items.find({$or:[{rating:{$gte:4}},{price:{$gt:40000}}]})
+
+->this query will return all the objects with rating greater than or equal 4 OR(operator) price greater than or equal to 40000
+db.items.find({$or:[{rating:{$gte:4}},{price:{$gte:40000}}]})
+
+->projection
+->this query will only return rating bcoz rating in query the rating is 1 and left is false
+db.items.find({rating:{$gt:3.5}},{rating:1})
+
+->this query will only return rating and qty bcoz in query the rating is 1 and qty is 1 and left is false 
+db.items.find({rating:{$gt:3.5}},{rating:1,qty:1})
+
+->this query will only return rating, qty and sold bcoz in query the rating is 1, qty is 1 and sold is also 1 and left is false
+db.items.find({rating:{$gt:3.5}},{rating:1,qty:1,sold:1})

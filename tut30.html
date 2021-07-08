@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in CSS</title>
+    <style>
+        /* CSS Positions are:static(default),absolute,relative,fixed and sticky */
+        .container{
+            border:2px solid black;
+            background-color: burlywood;
+            height: 3444px;
+        }
+        .box{
+            display: inline-block;
+            border: 3px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 3px;
+        }
+        #box3{
+            /*relative:Positions the element relative to its normal position and will leave a gap at it's normal position*/
+           /*position: relative;*/ /*agar apne position ko relative kar diya to aap top,bottom,left and right properties ka use kar sakte hei  */
+            /* top:34px; */
+             /* left:34px ;  */
+            /* right:34px; */
+           /* bottom:34px;  */
+
+           /*absolute:Positions the element relative to the position of it's first parent i.e box3 ka parent container hai*/
+           /* position: absolute; */
+           /* top:34px;
+           left:134px; */
+           /* right:65px;
+           bottom:55px; */
+
+
+           /*fixed:Positions the element relative to the browser window*/
+         /*position: fixed;*/ /*it means ki apne kisi bhi box ki position agar fixed kar di hai toh wo apni jagah par fix ho jayega */
+           /* right:10px;
+           bottom: 2px;*/
+          /* left:2px;
+           top:3px;*/
+
+           position:sticky;
+           top:3px;
+
+        }
+        /*.btn{
+           position:fixed
+           right:10px;
+           bottom: 2px;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <!-- <button type="button" class="btn">Chat with us</button> -->
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

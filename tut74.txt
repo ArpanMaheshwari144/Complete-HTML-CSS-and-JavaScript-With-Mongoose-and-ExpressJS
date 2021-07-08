@@ -1,0 +1,17 @@
+->These query will run only in powershell
+
+>kisi bhi file ko open karenge vscode mei open karne ke baad hum ye commands powershell me rum karenge
+->Commands
+->use harryKart
+->show collections
+
+db.items.find({price:50000}) (will shows only that items which price is exactly 50000)
+
+->This is for Deleting
+
+->Deleting items from the MongoDB database
+->this query shows- deleteOne will delete the entries which you gives in filter object but in case if multi match documents occur it will delete the first entry
+db.items.deleteOne({price:50000})
+
+->this query shows- deleteMany will delete the entries which you gives in filter object and in case if multi match documents occur it will delete all the entries
+db.items.deleteMany({price:50000})

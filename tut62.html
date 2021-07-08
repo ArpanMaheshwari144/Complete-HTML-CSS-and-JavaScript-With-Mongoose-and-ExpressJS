@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        This is Arrow Functions
+    </div>
+
+    <script>
+        // function greet(){
+        //     console.log("good morning");
+        // }
+        // greet();
+            // or
+        // Arrow Function
+        // let greet = ()=> {
+        //     console.log("good afternoon");
+        // }
+        // greet();
+            // or
+        // let greet = ()=> console.log("good eve");
+        // greet();
+
+        // setTimeout(() => {
+        //     console.log("we are inside setTimeout function")
+        // }, 3000);
+
+        // let sum = (a,b)=>{
+        //     return a+b;
+        // }
+        // console.log(sum(3,4)); 
+              // or
+        // let sum1 = (a,b)=> a+b;
+        // console.log(sum1(3,3));
+
+        // let half = a => a/2;
+        // console.log(half(4));
+
+        // let obj1={
+        //     names:["arpan","adarsh","verma"],
+        //     speak(){
+        //         this.names.forEach((student)=>{
+        //             console.log("Good boys " + student);
+        //         });
+        //     }
+        // }
+        // obj1.speak();
+
+        let obj1={
+            greetings:"Good eve",
+            names:["arpan","adarsh","verma"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greetings + " Good boys " + student);
+                });
+            }
+        }
+        obj1.speak();
+
+        // the difference between => and fuction is that ki => function ka koi this nhi hota to ye apne parent ke hi this ke object ko call karega but agar hum (this) function mei lagaye to wo sirf apne hi fuction me this ke object ko search karega agar wha usse koi this ka object nhi mila to undefined print karega like below 
+
+        // let obj1={
+        //     greetings:"Good eve",
+        //     names:["arpan","adarsh","verma"],
+        //     speak(){
+        //         this.names.forEach(function s (student){
+        //             console.log(this.greetings + " Good boys " + student);
+        //         });
+        //     }
+        // }
+        // obj1.speak();
+
+    </script>
+</body>
+</html>

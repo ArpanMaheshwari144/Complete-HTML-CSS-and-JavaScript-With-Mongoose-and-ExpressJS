@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Objects in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        This is Math Object
+    </div>
+
+    <script>
+        // Printing the Math Object
+        let m=Math;
+        console.log(m);
+
+        // Printing the constants from Math Object
+        console.log("The value of Math.E is ",Math.E);
+        console.log("The value of Math.PI is ",Math.PI);
+        console.log("The value of Math.LN2 is ",Math.LN2);
+        console.log("The value of Math.LN10 is ",Math.LN10);
+        console.log("The value of Math.SQRT2 is ",Math.SQRT2);
+        console.log("The value of Math.LOG10E is ",Math.LOG10E);
+
+        // Printing the Functions from Math Object
+        let a=34.646447;
+        let b=89;
+        console.log("The value of a and b is ", a , b);
+        // Rounded function
+        console.log("The rounded value of a and b is ", Math.round(a), Math.round(b));
+
+        // Pow function
+        console.log("3 raised to the power of 2 is ", Math.pow(3,2));
+        console.log("4 raised to the power of 2 is ", Math.pow(4,2));
+        console.log("6 raised to the power of 3 is ", Math.pow(6,3));
+
+        // Square root function
+        console.log("Square root of 36 is ", Math.sqrt(36));
+        console.log("Square root of 144 is ", Math.sqrt(144));
+        console.log("Square root of 369 is ", Math.sqrt(369));
+
+        // Ceil and Floor
+        console.log("5.8 rounded up to nearest integer is ", Math.ceil(5.8));
+        console.log("5.8 rounded down to nearest integer is ", Math.floor(5.8));
+
+        // Abs Function
+        console.log("Absolute value of 5.66 is ", Math.abs(5.66));
+        console.log("Absolute value of -5.66 is ", Math.abs(-5.66));
+
+        // Trignometric Function
+        console.log("The value of sin(pi) is ",Math.sin(Math.PI));
+        console.log("The value of sin(pi/2) is ",Math.sin(Math.PI/2));
+        console.log("The value of cos(pi) is ",Math.cos(Math.PI));
+        console.log("The value of tan(pi) is ",Math.tan(Math.PI));
+        console.log("The value of tan(pi/2) is ",Math.tan(Math.PI/2));
+
+        // Min and Max Function
+        console.log("Minimum value of 4, 5, 6 is ", Math.min(4,5,6));
+        console.log("Minimum value of 124, 115, 126 is ", Math.min(124,115,126));
+        console.log("Maximum value of 114, 1235, 1226 is ", Math.max(114,1235,1226));
+        console.log("Maximum value of 12344, 12355, 44346 is ", Math.max(12344,12355,44346));
+
+        // Log Function
+        console.log("Log of 10 is ", Math.log(10));
+        console.log("Log of 10 base 2 is ", Math.log2(10));
+
+        // Generating a Random Number
+        // This will generate a random number b/w 0 and 1
+        let r=Math.random();
+        console.log("The random numbers b/w 0 and 1 is ", r);
+
+        // This will generate a random numbers b/w 1 and 100
+        let a1=1;
+        let b1=100;
+        let r1=a1+(b1-a1)*Math.random();
+        console.log("The random numbers b/w 1 and 100 is ", r1);
+
+        // This will generate a random numbers b/w 50 and 60
+        let a2=50;
+        let b2=60;
+        let r2=a2+(b2-a2)*Math.random();
+        console.log("The random numbers b/w 50 and 60 is ", r2);
+
+        // clz32 Function
+        // The Math.clz32() function returns the number of leading zero bits in the 32-bit binary representation of a number.
+        console.log(Math.clz32(1));
+        console.log(Math.clz32(4));
+        console.log(Math.clz32(1000));
+    </script>
+</body>
+</html>

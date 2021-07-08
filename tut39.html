@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Custom Properties</title>
+    <style>
+        :root{
+            /*bus color ko :root me daal lena hai or gwo global variable ho jayega*/
+            /*ye hai glonal variables inko aap khi se bhi acess kar sakte hai */
+           /*--box-color:cyan;*/ /*golbal variable*/
+
+           --primary-color: blue;
+
+           --danger-color: deeppink;
+
+           --maxw:333px;
+        }
+        .box{
+            /*variable define of box color which is blue*/
+            /*is variable ka scope sirf isi class ke andar tak hai usse bahar nhi hai*/
+            /*ye variables hai local variables*/
+            /* --box-color: violet; */ /*local variable*/
+
+            width:200px; /*width ki unit % or px mei ho sakti hai*/
+
+            height:200px;
+
+           /* background-color: var(--box-color); */ /*intialisation of variable*/
+
+           background-color: var(--primary-color);
+
+            border:2px solid var(--danger-color);
+
+            box-shadow: 4px 4px var(--danger-color);
+
+            /*margin:y-axis(top/bottom) x-axis(left/right)*/
+            margin:2px 9px;
+        }
+        .container{
+            max-width: var(--maxw);
+            margin: auto;
+
+            /* --box-color:crimson; */ /*local variable*/
+
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--danger-color);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

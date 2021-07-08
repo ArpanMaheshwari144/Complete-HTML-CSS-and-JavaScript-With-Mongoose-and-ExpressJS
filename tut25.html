@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /*this is universal selector*/
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color:#8e599ce3;
+        }
+        
+        .container {
+            background-color: rgb(231, 230, 241);
+            border: 3px solid rgb(64, 6, 119);
+
+            /* we can set padding for top,bottom left and right lie this  */
+            /* padding-top: 79px;
+            padding-bottom: 79px;
+            padding-right: 79px;
+            padding-left: 34px; */
+                   /* or */
+            /* padding:top right bottom left */
+            /* padding: 24px 20px 15px 44px; */
+
+            /* margin-top: 3px;
+            margin-bottom: 5px;
+            margin-left: 8px;
+            margin-right: 7px; */
+                  /* or */
+            /* margin:top right bottom left */
+            /* margin:3px 5px 7px 9px */
+
+            /*padding:y(top/bottom) x(left/right)*/
+            padding: 43px 151px;
+
+            /*margin:y(top/bottom) x(left/right)*/
+            margin: 36px 241px; /*if we increase margin and padding it will also increase the width if we overcome this we should use box-sizing:border-box */
+            border-radius: 110px;
+            width: 577px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is arpan</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tenetur amet ad, sed sequi
+            aspernatur pariatur consectetur, repellendus quos, deserunt impedit adipisci perferendis!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is arpan</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tenetur amet ad, sed sequi
+            aspernatur pariatur consectetur, repellendus quos, deserunt impedit adipisci perferendis!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is arpan</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tenetur amet ad, sed sequi
+            aspernatur pariatur consectetur, repellendus quos, deserunt impedit adipisci perferendis!</p>
+    </div>
+</body>
+
+</html>

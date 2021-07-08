@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar'
+            'section section aside'
+            'footer footer footer';
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: red;
+            }
+            .container {
+                grid-template-areas:
+                'navbar navbar navbar'
+                'section section section'
+                'aside aside aside'
+                'footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: blue;
+            }
+            .container {
+                grid-template-areas:
+                'navbar navbar navbar'
+                'section section section'
+                'aside aside aside'
+                'footer footer footer';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: yellow;
+            }
+            .container {
+                grid-template-areas:
+                'navbar navbar navbar'
+                'section section section'
+                'aside aside aside'
+                'footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width:800px) {
+            body {
+                background-color: green;
+            }
+        }
+
+        .border-now {
+            border: 2px solid black;
+            padding: 23px;
+            background-color: whitesmoke;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="border-now">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+        <section class="border-now">
+            <h2>This is CSS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sequi ex consequatur quibusdam consequuntur accusamus reprehenderit cupiditate sed porro quod labore, repellat cum ab deserunt ipsum esse nam dolores! Perferendis deleniti velit doloremque hic? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nam eaque quaerat dicta neque iure esse maxime, corporis facere doloremque saepe perspiciatis totam explicabo magni velit! Ex accusantium fugit molestiae harum veritatis suscipit dolore!</p>
+        </section>
+        <aside class="border-now">
+            <h2>More About Us</h2>
+        </aside>
+    </div>
+    <footer class="border-now">  Copyright &copy; All rights reserved! ARPAN MAHESHWARI</footer>
+</body>
+
+</html>

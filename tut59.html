@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        #btn{
+            padding:10px 14px;
+            background-color: rgb(118, 209, 209);
+            border: 2px solid rgb(255, 94, 0);
+            color: whitesmoke;
+            font-weight: bold;
+            border-radius: 28px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Browser Events:
+    1. click
+    2. contextmenu->jab mouse se right click hota hai
+    3. mouseover->element ke andar le kar jana
+    4. mouseout->element ka bahar lana
+    5. mousedown->button press karna
+    6. mouseup->button ko release karna
+    7. mousemove
+
+    Forms Events:
+    1. submit
+    2. focus->jaise kisi bhi input tag par focus karna
+
+
+    1. DOMContentLoaded->jab HTML ki DOM load ho jati hai
+
+    1. transitionend->css ka transition end karna hai toh -->
+
+    <div class="container">
+        <h1>This is Heading</h1>
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iste quam nam eaque dicta vel consequuntur eos unde exercitationem sit temporibus autem sequi iure asperiores perferendis. Illo atque eum impedit iusto magni sit! Eius fugit labore placeat rem est. Aut natus, corporis reiciendis nemo laudantium officiis illo aperiam perspiciatis ut. Alias maxime consectetur sed quo et laboriosam? Quae corrupti expedita nulla optio pariatur eius iure recusandae asperiores. Est maxime voluptate porro enim illo nostrum doloribus molestias voluptates amet impedit tempora debitis nisi facere, nulla aliquid esse culpa hic deserunt nemo! Non at obcaecati, quibusdam repellat ad perferendis nemo placeat dolorum, beatae autem distinctio repellendus ut nam officiis pariatur. Mollitia dolorum delectus, dolores ratione in quisquam quidem voluptate perferendis quo labore adipisci alias ipsam commodi quod corrupti totam, dolor, optio officiis numquam natus ad neque? Repellat ea quod unde quae aliquid, in veniam eaque modi, doloremque rem inventore obcaecati, voluptates placeat recusandae illum et dignissimos! Quam quaerat perspiciatis blanditiis perferendis alias exercitationem deleniti nesciunt. Alias iste iusto asperiores! Quis sint incidunt corrupti eveniet veritatis molestiae laudantium, maxime nesciunt tenetur impedit dolorum similique blanditiis placeat laborum sequi distinctio deserunt numquam? Earum illum facere aperiam delectus, laudantium magnam ut tenetur doloremque expedita culpa voluptates aliquam vel quibusdam explicabo, saepe tempore eaque necessitatibus dolorum quidem ea distinctio consequatur ducimus laborum placeat. Culpa dolore, nihil accusantium maxime, consectetur illum rem excepturi quis consequuntur error doloribus illo! Quaerat, blanditiis!</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            // alert("Mouse Now Inside");
+            console.log("Mouse Now Inside");
+
+        });
+
+        para.addEventListener('mouseout', function run(){
+            // alert("Mouse Now Went Outside");
+            console.log('Mouse Now Went Outside');
+
+        });
+
+        function toggleHide(){
+            // agar humne id use ki kahi bhi to wo universal ban jati hai hume use kahi bhi define karne ki zarurat nhi hai 
+            let btn=document.getElementById('btn');
+            let para=document.getElementById('para');
+            if(para.style.display!='none'){
+                para.style.display='none';
+            } else{
+                // block-> ki jo bhi content hoga wo show hoga vertically or hum uski height and width badal sakte hai
+                // none->ki aap ne ise jha bhi use kiya waha puri display kuch bhi show nhi karegi
+                // inline->ki jitna bhi content hai wo ek line mei aa jayega i.e x-axis
+                // inline-block-> ye inline or block property ka mixture hai mtlb jitna bhi content hai ek line mei aa jayega i.e x-axis or hum uski height ow width ko bada sakte hai
+
+                para.style.display='block';
+            }
+
+        }
+
+
+    </script>
+</body>
+</html>

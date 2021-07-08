@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Layouts Using Grid Template Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar'
+            'section section aside' 
+            'footer footer footer' 
+            ;
+        }
+        .item{
+            background-color: rgb(100, 64, 10);
+            border:3px solid rgb(27, 25, 25);
+            padding: 12px 25px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area:footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About ContactUs Services
+        </div>
+
+        <div id="section" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa assumenda fugit atque corrupti architecto expedita vitae animi? Ipsam totam voluptate tenetur autem pariatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam provident adipisci nobis fugiat pariatur voluptatem laborum aliquam. Voluptates quia harum doloribus. Minus fugiat, quisquam rem totam optio autem omnis hic, exercitationem consequuntur similique adipisci unde temporibus, provident atque blanditiis nihil!
+        </div>
+
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quibusdam ratione dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus error architecto quis minima nesciunt totam repellendus sed ut labore at possimus illo iure, quaerat quia tenetur necessitatibus ab animi deserunt aliquam. Consectetur laboriosam nemo, ipsum dolore sint ipsam corporis iste?</div>
+
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minus quam molestias mollitia iusto provident excepturi necessitatibus nam dolores voluptates alias aut fuga, dolor, expedita omnis aperiam quis nihil incidunt sapiente? Repudiandae, corporis!</footer>
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div> -->
+    </div>
+</body>
+</html>

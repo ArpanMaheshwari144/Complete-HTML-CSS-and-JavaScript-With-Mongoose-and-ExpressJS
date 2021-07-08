@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <link href="https://fonts.googleapis.com/css?family=Passion+One&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color:whitesmoke;
+        }
+        header::before{
+            background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+            content:"";
+            position: absolute;
+            top:0;   /*agar image mei top se koi bhi space hai to ye usse khatam kar deta hai*/
+            left: 0;  /*agar image mei left se koi bhi space hai to ye usse khatam kar deta hai*/
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5; /*agar aapko koi bhi image light karni hai to opacity ka istamal kare*/
+
+        }
+        .navigation{
+            font-family: 'Passion One', cursive;
+            font-size: 20px;
+
+            /* display: inline; */  /* jo bhi isme hei wo ek line mei aa jayega i.e on y-axis*/
+            display: flex;   /* jo bhi isme hei wo ek line mei aa jayega i.e on x-axis*/
+        }
+        li{
+            list-style: none;
+            padding:20px 23px;
+        }
+        section{
+            height: 344px;
+            font-family: 'Passion One', cursive;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+        /* section::before{
+            content: "this is a content";
+        }
+        section::after{
+            content: "this is a content";
+        } */
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome To Coding World</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, deleniti id mollitia accusantium earum perferendis ex omnis modi officiis eveniet minus quae vero itaque tempore vel deserunt quia corporis delectus facere! Nisi, beatae cumque!</p>
+        </section>
+</body>
+</html>

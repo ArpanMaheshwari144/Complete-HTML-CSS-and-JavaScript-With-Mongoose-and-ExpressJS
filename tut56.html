@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert,confirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+    <script>
+        // Alert in in-browser Javascript - Does not return anything
+        // Alert message ek modal window kholta hai or modal window-> jab tak alert modal window band nhi hoti jab tak aap page par kuch kaam nhi kar sakte ho
+        // alert("This is a alert message");
+
+        //Prompt in in-browser Javascript
+        // let name=prompt("What is your name?","Guest");
+        //             //or
+        // let name=prompt("What is your name?","");
+        //             //or
+        // let name=prompt("What is your name?");
+        // console.log(name);
+
+        //Confirm in in-browser Javascript
+        // let deletePost=confirm("Do you really want to delete this post?");
+        // // console.log(deletePost);
+
+        // if(deletePost){
+        //     // Code to delete the post
+        //     console.log("Your post has been deleted successfully")
+        // } else{
+        //     // Code to cancel deletion of the post
+        //     console.log("Your post has not been deleted");
+        // }
+
+        // One example using Prompt in JavaScript
+        let age=prompt("What is your age?","Age");
+        if(age>=18){
+            console.log("You are allowed inside the club");
+        } else{
+            console.log("You are not allowed inside the club");
+        }
+    </script>
+</body>
+</html>

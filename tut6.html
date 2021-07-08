@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="backend.java">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" name="myEmail" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="myAge" id="age">
+        </div>
+        <br>
+        <div>
+            <label for="address">Address:</label>
+            <input type="text" name="myAddress" id="address">
+        </div>
+        <br>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="bonus">Bonus:</label>
+            <input type="number" name="myBonus" id="bonus">
+        </div>
+        <br>
+        <div>
+            <label for="eligibility">Are you eligible?:</label>
+            <input type="checkbox" name="myEligibility" id="eligibility">
+        </div>
+        <br>
+        <div>
+            What is your eligibility? Are you a Asshole: <input type="radio" name="myEligibility">
+            Not a Asshole: <input type="radio" name="myEligibility">
+        </div>
+        <br>
+        <div>
+            <label for="virginity">Are you a Virgin:</label>
+            <input type="checkbox" name="myVirginity" id="virginity">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            <label for="yourself"> Write about yourself:</label>
+            <br><textarea name="text" cols="30" rows="10" id="yourself"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Cars:</label>
+            <select name="myCar" id="car">
+                <option value="Mercedes">Mercedes</option>
+                <option value="BMW">BMW</option>
+                <option value="Ferrari">Ferrari</option>
+                <option value="Bugatti" selected>Bugatti</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="Submit">
+            <input type="reset" name="Reset">
+        </div>
+    </form>
+</body>
+
+</html>

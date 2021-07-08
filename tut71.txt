@@ -1,0 +1,16 @@
+->These queries will only run in powershell
+
+->MongoDB Commands
+
+->Commands
+-> ek powershell kholna hai usme mongod likhna hai and phir ek dusra powershell kholna hai or usme mongo likhna hai
+->phir us powershell mei likhna hai jisme apne mongo likha hai
+->db
+->use harry (ek harry name ki database ban jayegi)
+->show dbs
+->show collections
+->db.text (jo database hai uska text bna lega jaise database hai harry to harry.text bna lega)
+->show dbs(kuch show nhi karega kyoki harry.text is empty)
+->db.text.insert({}) (ek empty insert ho jayega harry.text mei)
+->show dbs (ye harry name ki file bna lega jisme kuch nhi hoga lekin hum usko dekh sakte hai)
+->db.text.insert({"name:":"harry"}) show karega logs ki kuch insert hua hai

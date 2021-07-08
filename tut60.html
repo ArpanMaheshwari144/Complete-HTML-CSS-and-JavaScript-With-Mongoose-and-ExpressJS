@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript SetTimeOut and ClearTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        Time Now Is <span id="time"></span>
+    </div>
+
+    <script>
+        console.log("arpan");
+
+        // setTimeout->Allows us to run the fuction once after the interval of time
+        // clearTimeout->Allows us to run the function repeatedly after the interval of time
+        // setTimeout-> time milliseconds me leta hai
+        // setInterval->time milliseconds me leta hai
+        // timeOut->fuction ko unique id deta hai
+
+        //setTimeout:
+        // function greet(){
+        //     console.log("hello");
+        // }
+        // // greet();
+        // // it takes time in milliseconds
+        // setTimeout(greet,5000);
+
+        // function greet(name){
+        //     console.log("hello " + name);
+        // }
+        // setTimeout(greet,5000,"arpan");
+
+        // function greet(name,byeText){
+        //     console.log("hello " + name + " " + byeText);
+        // }
+        // setTimeout(greet,5000,"arpan","bye");
+        // setTimeout(greet(),5000)->app setTimeout ke andar function ko call nhi kar sakte
+
+        // timeOut,setTimeout and clearTimeout:
+        // function greet(name,byeText){
+        //     console.log("hello " + name + " " + byeText);
+        // }
+        // timeOut=setTimeout(greet,5000,"arpan","bye");
+        // console.log(timeOut); // timeOut gives a unique id to function
+        // clearTimeout(timeOut);
+
+        // setInterval:
+        // function greet(name){
+        //     console.log("hello " + name);
+        // }
+        // setInterval(greet,1000,"arpan");
+
+        // intervalId and clearInterval:
+        // function greet(name){
+        //     console.log("hello " + name);
+        // }
+        // intervalId=setInterval(greet,1000,"arpan");
+        // clearInterval(intervalId);
+
+        // clock
+        function displayTime(){
+            time=new Date(); // Date is for showing the date
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(displayTime,1000);
+
+    </script>
+</body>
+</html>

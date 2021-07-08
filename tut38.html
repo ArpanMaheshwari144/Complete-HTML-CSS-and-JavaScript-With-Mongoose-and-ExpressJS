@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin:23px 12px;
+            /* border:2px solid red; */
+            background-color: burlywood;
+
+            /*box-shadow:offset-x offset-y color*/
+            /* box-shadow: 10px 13px green;*/
+            /*box-shadow: -10px -13px green; */
+
+            /*box-shadow:offset-x offset-y blur-radius color*/
+            /* box-shadow: 7px 5px 10px green;*/
+            /*box-shadow: -7px -5px 10px green ; */
+
+            /*box-shadow:offset-x offset-y blur-radius spread-radius color*/
+            /* box-shadow: 7px 5px 10px 34px green;*/
+            /*box-shadow: -7px -5px 10px 34px green; */
+
+
+            /*rbga-> means red blue green alpha and alpha means ki aap jitna zayada alpha rakho ge utna hi color dark hoga*/
+           /* box-shadow: -7px -5px 10px 34px rgba(92, 0, 128, 0.815); */
+
+           /*inset box-shadow ko andar ki taraf kar deta hai */
+           /* box-shadow: inset 3px 5px green; */
+
+           /*for multiple shadows*/
+           box-shadow: 3px 5px green,4px 6px red;
+        }
+
+        .card h2{
+            /*text-shadow:offset-x offset-y color*/
+            text-shadow: 3px 4px red;
+            /* text-shadow: -3px -4px red; */
+
+            /*text-shadow:offset-x offset-y blur-radius color*/
+            /* text-shadow: 3px 2px 2px white; */
+            /* text-shadow: -3px -2px 2px white; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum fugiat corrupti nobis. Architecto, neque eligendi. Quasi illo quia tempore ab earum quos maxime, dignissimos quas incidunt temporibus dolorum natus quam sit deserunt eaque blanditiis.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum fugiat corrupti nobis. Architecto, neque eligendi. Quasi illo quia tempore ab earum quos maxime, dignissimos quas incidunt temporibus dolorum natus quam sit deserunt eaque blanditiis.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum fugiat corrupti nobis. Architecto, neque eligendi. Quasi illo quia tempore ab earum quos maxime, dignissimos quas incidunt temporibus dolorum natus quam sit deserunt eaque blanditiis.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,Width,Borders and BackGrounds</title>
+    <style>
+        #firstPara {
+            background-color: burlywood;
+            height: 50px;
+            width: 700px;
+
+            border: 5px solid red;
+
+            /* or */
+
+            /* border-width: 5px;
+            border-color: red;
+            border-style: solid;  */
+
+            border-radius: 30px;
+        }
+        #secondPara{
+            background-color: rgb(48, 105, 119);
+            height: 50px;
+            width: 700px;
+            border-top: 5px dotted rgb(59, 19, 172) ; 
+            border-right: 5px solid rgb(221, 245, 11) ; 
+            border-bottom: 5px dotted rgb(255, 47, 175) ; 
+            border-left: 5px solid rgb(218, 100, 100) ;  
+            border-top-left-radius: 20px;
+            border-top-right-radius:40px;
+            border-bottom-left-radius:60px ;
+            border-bottom-right-radius: 80px; 
+        }
+        #thirdPara{
+            color: rgb(8, 243, 135);;
+            height: 391px;
+            width: 700px;
+            border: 5px solid red;
+            border-radius: 25px;
+            background-repeat: round; /*this is for image repetation if image is repeat in your background this will help you in to handle the repeation if you put repeat-x and repeat-y will make it repeat on x and y axis*/
+            background-image: url('https://www.whoa.in/20150417-Whoa/Mukharvind-Shrinathji-wirh-Colorful-Background-HD-Wallpaper.jpg');
+        }
+        #forthPara{
+            height: 500px;
+            width: 455px;
+            border: 5px solid red;
+            border-radius: 25px;
+            background-repeat:no-repeat;/*repeat-x and repeat-y will make it repeat on x and y axis*/
+
+             /* if we want to change the position of image by our according so we do this */
+            /* background-position: 192px 45px; */
+
+            /* these are all possible combinations to shift the image */
+            background-position: center center;
+            /* background-position: center right; */
+            /* background-position: center left; */
+            /* background-position: top left; */
+            /* background-position: top right; */
+            /* background-position: top center; */
+            /* background-position: bottom right; */
+            /* background-position: bottom left; */
+            /* background-position: bottom centre; */
+
+            background-image: url('https://www.codewithharry.com/static/common/img/photo.png');
+        }
+    </style>
+</head>
+
+<body>
+    <h2>This is Arpan</h2>
+    <p id="firstPara">This is first paragraph</p>
+
+    <h3>This is Arpan</h3>
+    <p id="secondPara">This is second paragraph</p>
+
+    <h4>This is Arpan</h4>
+    <p id="thirdPara">JAI SHREE NATH JI</p>
+
+    <h4>This is Arpan</h4>
+    <p id="forthPara">This is another para</p>
+</body>
+
+</html>

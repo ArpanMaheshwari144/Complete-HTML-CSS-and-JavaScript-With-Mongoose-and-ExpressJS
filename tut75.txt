@@ -1,0 +1,11 @@
+>kisi bhi file ko open karenge vscode mei open karne ke baad hum ye commands powershell me rum karenge
+->Commands
+->use harryKart
+->show collections
+
+db.items.find()
+db.items.updateOne({name:"Iphone XR"},{$set:{price:2}})
+db.items.find()
+db.items.updateMany({name:"Iphone XR"},{$set:{price:2}})
+db.items.find()
+db.items.updateMany({name:"Iphone 11"},{$set:{price:3,rating:1}})

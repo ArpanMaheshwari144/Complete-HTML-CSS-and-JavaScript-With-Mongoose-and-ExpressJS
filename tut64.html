@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+
+    <!-- JSON ek asa notation hai jiski madad se aap apne data ko transport kar sakte hai -->
+    
+</head>
+<body>
+    <div class="container">
+        This is my JSON
+    </div>
+
+    <script>
+        let jsonObj = {
+            name: "Harry",
+            channel: "CWH",
+            friend: "Adarsh",
+            food: "Bhindi",
+        }
+        console.log(jsonObj);
+
+        // Ye JSON object ko string mei convert kar deta hai
+        let myJsonStr=JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+
+        myJsonStr=myJsonStr.replace("Harry",'Larry');
+        console.log(myJsonStr);
+
+        // Ye JSON string ko object mei convert kar deta hai
+        let newJsonObj=JSON.parse(myJsonStr);
+        console.log(newJsonObj);
+
+
+    </script>
+    
+</body>
+</html>

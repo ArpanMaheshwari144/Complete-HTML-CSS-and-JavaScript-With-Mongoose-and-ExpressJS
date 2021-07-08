@@ -1,0 +1,19 @@
+->These query will run only in powershell
+
+->kisi bhi file ko open karenge vscode mei open karne ke baad hum ye commands powershell me rum karenge
+->Commands
+->show dbs
+->use harryKart
+->show collections
+
+->CRUD->means Create,Read,Update and Delete
+
+->This is for Create(Insertion)
+
+->Inserting data in mogodb
+
+->use harryKart(ek harryKart name ki database ban jayegi )
+
+db.items.insertOne({name:"Iphone X",price:50000,rating:5.0,qty:250,sold:249})
+
+db.items.insertMany([{name:"Iphone X",price:50000,rating:5.0,qty:250,sold:249},{name:"Iphone 11",price:550000,rating:5.0,qty:250,sold:249},{name:"Iphone 11 pro",price:5550000,rating:5.0,qty:25000,sold:24900},{name:"Iphone 8",price:40000,rating:5.0,qty:25,sold:24},{name:"Iphone XR",price:500000,rating:5.0,qty:2500,sold:2490,isBig:true}])

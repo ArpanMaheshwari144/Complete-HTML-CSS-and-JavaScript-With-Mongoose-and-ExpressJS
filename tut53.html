@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals Statements</title>
+</head>
+<body>
+    <!-- > ye div ke andar la aayega -->
+    <!-- + ye div ke bahar le jayega -->
+    
+    <!-- div>ul>li{Item-$}*n -->
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        // hum 'var' bhi use kar sakte hai and 'let' bhi use kar sakte hai
+
+        // var string1="arpan";
+        // var string1="Arpan";
+        // console.log(string1);
+
+        // let jab use karenge jab hume pta hai ki program me hum value ko change kar sakte hai
+        // let a="aa";
+        // {
+        //     let a="bb";
+        //     console.log(a);
+        // }
+        // console.log(a);
+
+        //const hum tab use karenge jab huume lagta hai ki ab iski value change nhi karni hai aage program mei
+        // const a="this can not be changed";
+        // a="you fucking idiot this can not be changed bcoz it is const";
+        // console.log(a);
+
+        // let age=18;
+        // if(age>18){
+        //     console.log("You can drive");
+        // } else if(age==18){
+        //     console.log("You can learn driving");
+        // } else{
+        //     console.log("You can not drive");
+        // }
+
+        let weekDays=8;
+        switch (weekDays) {
+            case 1:
+                console.log("Today is Monday");    
+                break;
+            case 2:
+                console.log("Today is Tuesday");    
+                break;
+            case 3:
+                console.log("Today is Wednesday");    
+                break;
+            case 4:
+                console.log("Today is Thrusday");    
+                break;
+            case 5:
+                console.log("Today is Friday");    
+                break;
+            case 6:
+                console.log("Today is Saturday");    
+                break;
+            case 7:
+                console.log("Today is Sunday");    
+                break;
+            default:
+                console.log("Wrong Choice");
+                break;
+        }
+    </script>
+</body>
+</html>

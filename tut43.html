@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            /*ye container ek grid ban gaya hai or us container ke andar jitne bhi child the wo grid items ban gaye*/
+            /*grid or table dono hi different hai table sirf html table banane ke kaam aati hai or grid pure page ka layout banata hai*/
+            display:grid; 
+
+            /*grid-template-columns->100px 100px 100px mtlb ki teen column bna do of width 100px 100px 100px  */
+
+            /* grid-template-columns: 100px 100px 100px; */
+            /* grid-template-columns: 100px 200px 300px; */
+            /* grid-template-columns: 300px 500px 700px; */
+            /* grid-template-columns: auto 100px 100px; */
+            /* grid-template-columns: 100px auto 100px; */
+            /* grid-template-columns: 100px 100px auto; */
+            /* grid-template-columns: 100px 200px auto; */
+            /* grid-template-columns: 300px 100px auto; */
+
+            /*grid-template-columns->(fr means fraction) 1fr 4fr 1fr means ki ye teeno column ko 1:4:1 me bnayega*/
+            /*agar aap fr ko column me use kar rahe hai to te aapko width provide karega mtlb ki jitna jayada fr utni hi zayada width*/
+            /* grid-template-columns: 1fr 4fr 1fr; */
+
+            /* grid-template-columns->repeat(10,200px) mtlb 10 column bna do 200px width ke*/
+            /* grid-template-columns: repeat(10,200px); */
+                         /*or*/
+            grid-template-columns: repeat(3,auto);
+
+            /* grid-gap: 50px; */
+                   /*or*/
+            grid-gap: 4rem;
+        }
+        .item{
+            /* height: 100px; */
+            /* width:100px; */
+            background-color: burlywood;
+            border: 2px solid brown;
+
+            padding:15px 5px; /*padding sirf andar ka content samet ta hai*/
+            /*margin:4px;*/ /*ase margin jab di jati hai to wo top,bottom,left and right ki hoti hai*/
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="item">This is Item-1</div>
+       <div class="item">This is Item-2</div>
+       <div class="item">This is Item-3</div>
+       <div class="item">This is Item-4</div>
+       <div class="item">This is Item-5</div>
+       <div class="item">This is Item-6</div>
+       <div class="item">This is Item-7</div>
+       <div class="item">This is Item-8</div>
+       <div class="item">This is Item-9</div>
+       <div class="item">This is Item-10</div>
+       <div class="item">This is Item-11</div>
+       <div class="item">This is Item-12</div>
+       <div class="item">This is Item-13</div>
+       <div class="item">This is Item-14</div>
+       <div class="item">This is Item-15</div>
+       <div class="item">This is Item-16</div>
+       <div class="item">This is Item-17</div>
+       <div class="item">This is Item-18</div>
+       <div class="item">This is Item-19</div>
+       <div class="item">This is Item-20</div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            margin: auto;
+            border: 2px solid rgb(13, 58, 206);
+            width: 1200px; /*width ko px or % mei le sakte hai */
+
+        }
+        img{
+            margin: auto; /*margin auto karne se image centre mei set ho jayegi or uske sath diplay ko bhi block karna padega taki agar hum uski width set kare to wo idhar udhar na bhag jaye*/
+            /* display: inline; */  /* it means jitna bada element hei utni space lelega*/
+            display: block;  /*it means ki aap uski width ko set kar sakte hei or margin auto kar ke usko centre mei bhi laa sakte hei*/
+            width: 34px;
+        }
+        h3{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0px;
+        }
+        .box{
+            border: 4px solid black;
+            background-color: blanchedalmond;
+            margin: 4px 0px;
+            padding: 25px;
+            display: inline-block; /*agar hum display inline-block na kar to sare boxes ek hi line mei aa jayenge means ki wo y-axis mei ho jayenge isliye hume unhe inline-block karke x-axis mei laa sakte hei or unhe inline-block karke hum unki margin,padding,height and width set kar sake*/
+            width: 33%;
+        }
+        .container{
+            margin: auto; /*agar margin auto or display block na kare to boxes idhar udhar bhag sakte hei*/
+            width: 1200px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://www.codewithharry.com/static/common/img/photo.png" alt="NO IMAGE FOUND">
+        <h3>Welcome To Harry's Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste totam iusto expedita perspiciatis vero corporis quisquam quod doloribus cumque, sit aliquam tempora, nisi dignissimos pariatur alias saepe debitis eaque placeat at soluta eius ab aliquid. Laborum maiores veritatis maxime ullam, reprehenderit quis commodi?</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste totam iusto expedita perspiciatis vero corporis quisquam quod doloribus cumque, sit aliquam tempora, nisi dignissimos pariatur alias saepe debitis eaque placeat at soluta eius ab aliquid. Laborum maiores veritatis maxime ullam, reprehenderit quis commodi?</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste totam iusto expedita perspiciatis vero corporis quisquam quod doloribus cumque, sit aliquam tempora, nisi dignissimos pariatur alias saepe debitis eaque placeat at soluta eius ab aliquid. Laborum maiores veritatis maxime ullam, reprehenderit quis commodi?</p>
+        </div>
+    </div>
+    
+</body>
+</html>

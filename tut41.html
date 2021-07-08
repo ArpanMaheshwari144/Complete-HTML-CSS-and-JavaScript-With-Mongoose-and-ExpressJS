@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #box{
+            display: flex;
+            height: 200px;
+            width:200px;
+            background-color: red;
+            justify-content: center;
+
+            align-items: center; /*ye item ko bilkul center mei le aata hai*/
+
+            /* align-content: center; */ /*ye sirf spacing ko barabar karta hai left se or right se*/
+
+            /* transition-property: background-color; */
+            /* transition-duration: 1s; */
+
+            /* transition-timing-function: ease; */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-out; */
+            /* transition-timing-function: ease-in-out; */
+
+            /* transition-delay: 2s; */
+
+             /*These Properties can be set using this shorthand*/
+            /* transition: transition-property transition-duration transtion-timing-function transition-delay */
+            /* transition:bacground-color 1s ease .3s; */
+
+            transition:all 1s ease .3s;
+        }
+
+        #box:hover{
+            background-color: green;
+            height:400px;
+            width:400px;
+            border-radius: 100px;
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h3>This is CSS Transitions</h3>
+    <div class="container">
+        <div id="box">
+            This is my box
+        </div>
+    </div>
+    
+</body>
+</html>

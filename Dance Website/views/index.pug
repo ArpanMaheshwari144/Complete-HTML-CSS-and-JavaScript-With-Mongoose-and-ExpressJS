@@ -1,0 +1,74 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+                | ADA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+
+    section#introSection
+        div Welcome To Arpan's Dance Academy
+        div.small Eat Sleep Dance Repeat
+    
+    section#missionSection
+        h2 Our Missions
+        div.card
+            h3 Dance Perferction
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p It Is With Your Feet That You Move But It Is With Your Heart That You Dance.
+
+        div.card
+            h3 Dance The Way You Like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p Turn Up The Volume Close Your Eyes And Let the Music Take Your Soul.
+
+        div.card
+            h3 Experts Teachers
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p If You Can Dance And Be Free And Not Be Embarrassed You Can Rule The World.
+        
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors
+            img(src="/static/img/logo1.png",alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo2.png",alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo3.png",alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo4.png",alt="Sponsor Image", class="spImage")
+            img(src="/static/img/logo5.png",alt="Sponsor Image", class="spImage")
+
+    div.container
+        h1 Contact Us
+        form(action="/contact", method="post", class="myForm")
+            input(type="text", class="myInput",name="name",placeholder="Enter Your Name")
+            input(type="email", class="myInput",name="email",placeholder="Enter Your Email")
+            input(type="phone", class="myInput",name="phone",placeholder="Enter Your Phone Number")
+            input(type="age", class="myInput",name="age",placeholder="Enter Your Age")
+            input(type="gender", class="myInput",name="gender",placeholder="Enter Your Gender")
+            input(type="text", class="myInput",name="address",placeholder="Enter Your Address")
+            input(type="text", class="myInput",name="desc",placeholder="Enter Your Concern")
+            button(class="btn")
+               | Submit
+
+    footer#footer
+        |  Copyright © 2020 ArpanDanceAcademy.com | All rights reserved!      
+    script
+      include ../static/index.js

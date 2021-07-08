@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo Selectors</title>
+    <style>
+        .container{
+            /*yadi aapko koi bhi cheez center mei lani hai toh ye teen kaam karo i.e display ko block, width ko set karo and margin ko auto */
+            display: block;
+            width: 233px;
+            margin:auto;
+        }
+
+        input{
+            display:block;
+        }
+
+        input[type='text']{
+            padding:15px;
+            margin:2px;
+            color: deeppink;
+            border:2px solid red;
+        }
+
+        input[type='email']{
+            padding:15px;
+            margin:2px;
+            color:fuchsia ;
+            border: 2px solid red;
+        }
+
+        input[type='password']{
+            padding:15px;
+            margin:2px;
+            color:lawngreen;
+            border: 2px solid red;
+        }
+        input[type='submit']{
+            padding:10px;
+            margin:2px;
+            width:50%;
+            border: 2px solid red;
+        }
+
+        a[target]{
+            font-size: 44px;
+            color: violet;
+        }
+
+        a[target='_self']{
+            font-size: 34px;
+            color: rgb(32, 21, 180);
+        }
+
+        /* li:nth-child(3){
+            background-color: lawngreen;
+            color: chocolate;
+        } */
+
+        /* li:nth-child(2n+0){
+            background-color: lightcoral;
+            color: crimson;
+        } */
+
+        /* li:nth-child(3n+3){
+            background-color: lightpink;
+            color: darkblue;
+        } */
+
+        /* li:nth-child(odd){
+            background-color: magenta;
+            color: darkred;
+        } */
+
+        /* li:nth-child(even){
+            background-color: midnightblue;
+            color: pink;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go To Google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go To Facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your Name">
+            <input type="email" placeholder="Enter your Email">
+            <input type="password" placeholder="Enter your Password">
+            <input type="submit" value="Submit">
+            <!-- <button class="container">Submit</button> -->
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+            <li class="item" id="item-6">Item6</li>
+            <li class="item" id="item-7">Item7</li>
+            <li class="item" id="item-8">Item8</li>
+            <li class="item" id="item-9">Item9</li>
+            <li class="item" id="item-10">Item10</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gidugu&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: 'Gidugu', sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid rgb(231, 12, 60);
+            margin: 33px auto;
+            background-color: #c16969;
+        }
+
+        .item {
+            border: 3px solid rgb(43, 204, 11);
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(138, 120, 236);
+        }
+
+        #fruit {
+            float: left;
+            /*float left means ki friut ka box left mei chala jayega*/
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            /*float right means ki computer ka box right mei chala jayega*/
+            width: 50%;
+
+        }
+
+        #stationary {
+            /* float: left; */
+            /* clear: left; */
+            /*clear left ka means hai yadi koi left wala box overlap kar raha hai kisi bhi box ko to vo clear ho jaye*/
+            /* clear: right; */
+            /*clear right ka means hai yadi koi right wala box overlap kar raha hai kisi bhi box ko to vo clear ho jaye*/
+            clear: both;
+            /*clear both ka means hai yadi koi left wala ya right wala box overlap kar raha hai kisi bhi box ko to vo clear ho jaye*/
+            width: 99%;
+        }
+
+        p,
+        h3 {
+            /* text-align: right; 
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+        h1{
+            /* width: 45%; */
+                /* or */
+            width: 280px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>WELCOME TO MY STORE</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitPara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa ad optio vero,
+                totam quae tempora cum similique delectus harum. Ut ipsa ratione corrupti dolor voluptatum sequi quia
+                animi repellat vero illum. Iure, nobis debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti quos ipsa facilis culpa eveniet molestiae, odio nostrum illum nisi consectetur? Molestiae
+                soluta accusamus molestias laboriosam quos eius quisquam mollitia dignissimos magnam explicabo, ipsum
+                alias!</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computers</h3>
+            <p id="computerPara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In error ad
+                eligendi officiis tempore quibusdam quam veritatis fuga perferendis aliquid eaque autem magnam, numquam
+                nihil, cumque ab omnis deserunt a dignissimos! Asperiores, veritatis repellendus. Lorem ipsum, dolor sit
+                amet consectetur adipisicing elit. Incidunt, perferendis at quasi ratione vero deleniti praesentium
+                sequi delectus doloremque aperiam consequuntur odio molestias, mollitia doloribus ipsum aspernatur
+                repellendus corrupti repellat laudantium adipisci ducimus vitae.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationaryPara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In error ad
+                eligendi officiis tempore quibusdam quam veritatis fuga perferendis aliquid eaque autem magnam, numquam
+                nihil, cumque ab omnis deserunt a dignissimos! Asperiores, veritatis repellendus.</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassesPara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In error ad
+                eligendi officiis tempore quibusdam quam veritatis fuga perferendis aliquid eaque autem magnam, numquam
+                nihil, cumque ab omnis deserunt a dignissimos! Asperiores, veritatis repellendus.</p>
+        </div>
+    </div>
+</body>
+
+</html>
