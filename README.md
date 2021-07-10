@@ -4,7 +4,7 @@
 For development, you will need only Node.js installed in your environment.
 
 ### Node
-Just go on [official Node.js website](https://nodejs.org/) and download the installer according to your system specifications.<hr>
+Just go on official [Node.js website](https://nodejs.org/) and download the installer according to your system specifications.<hr>
 
 If the installation was successful, you should be able to run the following commands:
 ```sh
