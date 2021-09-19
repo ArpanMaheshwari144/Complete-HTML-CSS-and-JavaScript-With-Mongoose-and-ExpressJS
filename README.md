@@ -41,7 +41,7 @@ Also you can run the files by the help of nodemon using this command:
 ```sh
 nodemon "filename"
 ```
-By the help of this command you did not start the server again and again. 
+By the help of this command you did not start the server again and again and also this command will only run js files. 
 
 You can install various tools necessary for your production with this command:
 ```sh
