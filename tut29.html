@@ -1,45 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Display Properties</title>
     <style>
-        *{
+        /* inline -> Displays an element as an inline element (like <span>). Any height and width properties will have no effect.
+
+        block -> Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width.
+
+        contents ->	Makes the container disappear, making the child elements children of the element the next level up in the DOM.
+
+        flex ->	Displays an element as a block-level flex container.
+
+        grid ->	Displays an element as a block-level grid container.
+
+        inline-block ->	Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values.
+
+        inline-flex -> Displays an element as an inline-level flex container.	
+
+        inline-grid	-> Displays an element as an inline-level grid container.
+
+        none -> The element is completely removed.
+
+        Ques. Grid vs Flexbox?
+        Ans. CSS Grid and Flexbox are layout models that share similarities and can be used together. The key difference is that CSS Grid can be used to create two-dimensional layouts, while Flexbox can only be used to create one-dimensional layouts.
+        */
+        * {
             box-sizing: border-box;
         }
-        header{
+
+        header {
             margin: auto;
             border: 2px solid rgb(13, 58, 206);
-            width: 1200px; /*width ko px or % mei le sakte hai */
+            width: 1200px;
+            /*width ko px or % mei le sakte hai */
 
         }
-        img{
-            margin: auto; /*margin auto karne se image centre mei set ho jayegi or uske sath diplay ko bhi block karna padega taki agar hum uski width set kare to wo idhar udhar na bhag jaye*/
-            /* display: inline; */  /* it means jitna bada element hei utni space lelega*/
-            display: block;  /*it means ki aap uski width ko set kar sakte hei or margin auto kar ke usko centre mei bhi laa sakte hei*/
+
+        img {
+            margin: auto;
+            /*margin auto karne se image centre mei set ho jayegi or uske sath diplay ko bhi block karna padega taki agar hum uski width set kare to wo idhar udhar na bhag jaye*/
+            /* display: inline; */
+            /* it means jitna bada element hei utni space lelega*/
+            display: block;
+            /*it means ki aap uski width ko set kar sakte hei or margin auto kar ke usko centre mei bhi laa sakte hei*/
             width: 34px;
         }
-        h3{
+
+        h3 {
             text-align: center;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             margin: 0px;
         }
-        .box{
+
+        .box {
             border: 4px solid black;
             background-color: blanchedalmond;
             margin: 4px 0px;
             padding: 25px;
-            display: inline-block; /*agar hum display inline-block na kar to sare boxes ek hi line mei aa jayenge means ki wo y-axis mei ho jayenge isliye hume unhe inline-block karke x-axis mei laa sakte hei or unhe inline-block karke hum unki margin,padding,height and width set kar sake*/
+            display: inline-block;
+            /*agar hum display inline-block na kar to sare boxes ek hi line mei aa jayenge means ki wo y-axis mei ho jayenge isliye hume unhe inline-block karke x-axis mei laa sakte hei or unhe inline-block karke hum unki margin,padding,height and width set kar sake*/
             width: 33%;
         }
-        .container{
-            margin: auto; /*agar margin auto or display block na kare to boxes idhar udhar bhag sakte hei*/
+
+        .container {
+            margin: auto;
+            /*agar margin auto or display block na kare to boxes idhar udhar bhag sakte hei*/
             width: 1200px;
             display: block;
         }
     </style>
 </head>
+
 <body>
     <header class="top">
         <img src="https://www.codewithharry.com/static/common/img/photo.png" alt="NO IMAGE FOUND">
@@ -48,17 +82,27 @@
     <div class="container">
         <div class="box">
             <h4 class="heading">Heading</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste totam iusto expedita perspiciatis vero corporis quisquam quod doloribus cumque, sit aliquam tempora, nisi dignissimos pariatur alias saepe debitis eaque placeat at soluta eius ab aliquid. Laborum maiores veritatis maxime ullam, reprehenderit quis commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste totam iusto expedita perspiciatis
+                vero corporis quisquam quod doloribus cumque, sit aliquam tempora, nisi dignissimos pariatur alias saepe
+                debitis eaque placeat at soluta eius ab aliquid. Laborum maiores veritatis maxime ullam, reprehenderit
+                quis commodi?</p>
         </div>
         <div class="box">
             <h4 class="heading">Heading</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste totam iusto expedita perspiciatis vero corporis quisquam quod doloribus cumque, sit aliquam tempora, nisi dignissimos pariatur alias saepe debitis eaque placeat at soluta eius ab aliquid. Laborum maiores veritatis maxime ullam, reprehenderit quis commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste totam iusto expedita perspiciatis
+                vero corporis quisquam quod doloribus cumque, sit aliquam tempora, nisi dignissimos pariatur alias saepe
+                debitis eaque placeat at soluta eius ab aliquid. Laborum maiores veritatis maxime ullam, reprehenderit
+                quis commodi?</p>
         </div>
         <div class="box">
             <h4 class="heading">Heading</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste totam iusto expedita perspiciatis vero corporis quisquam quod doloribus cumque, sit aliquam tempora, nisi dignissimos pariatur alias saepe debitis eaque placeat at soluta eius ab aliquid. Laborum maiores veritatis maxime ullam, reprehenderit quis commodi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste totam iusto expedita perspiciatis
+                vero corporis quisquam quod doloribus cumque, sit aliquam tempora, nisi dignissimos pariatur alias saepe
+                debitis eaque placeat at soluta eius ab aliquid. Laborum maiores veritatis maxime ullam, reprehenderit
+                quis commodi?</p>
         </div>
     </div>
-    
+
 </body>
+
 </html>
